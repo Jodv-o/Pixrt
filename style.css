@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 25px);
+    grid-template-rows: repeat(16, 25px);
+    gap: 0;
+    border: 2px solid #000;
+}
+
+.pixel {
+    width: 25px;
+    height: 25px;
+}
+
+.configs{
+  padding: 0.8rem 0 1.2rem 0;
+  margin: 0 0 -2px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 404px;
+  height: 4rem;
+}
+
+.configs input, .configs button{
+  margin: 25px;
+  border: none;
+  outline: none;
+}
+
+.configs input{
+  height: 45px;
+  cursor: pointer;
+}
+.configs input::-webkit-color-swatch{
+  border-radius: 10px;
+  border: none;
+}
+
+.eraser{
+  width: 50px;
+  height: 40px;
+  color: #000;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out .25s;
+}
+.eraser-active{
+  width: 50px;
+  height: 40px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out .25s;
+}
